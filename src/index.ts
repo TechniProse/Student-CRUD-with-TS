@@ -10,7 +10,7 @@ import mongoose from "mongoose";
 const app: Application = express();
 app.use(express.json());
 
-// Import Student model and Import routes
+// Import student routes
 import studentRoutes from "./routes/studentRoutes";
 
 app.use("/api/students", studentRoutes);
